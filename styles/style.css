@@ -1,0 +1,13 @@
+:root {
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+    --red: hsl(0, 100%, 50%);
+    --green: hsl(120, 100%, 21%);
+    --black: hsl(0, 0%, 0%);
+    --dark-blue: hsl(239, 97%, 15%);
+}
+
+body
+{
+    margin: 0;
+}

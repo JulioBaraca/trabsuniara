@@ -1,0 +1,44 @@
+:root {
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+    --red: hsl(0, 100%, 50%);
+    --green: hsl(120, 100%, 21%);
+    --black: hsl(0, 0%, 0%);
+    --dark-blue: hsl(239, 97%, 15%);
+    --white-blue: hsl(229, 100%, 72%);
+}
+body{
+    margin: 0;
+}
+#limpar {
+    background-color: var(--onyx);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#enviar {
+    background-color: var(--green);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#cancelar {
+    background-color: var(--red);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

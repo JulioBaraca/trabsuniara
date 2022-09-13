@@ -1,0 +1,49 @@
+:root {
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+    --red: hsl(0, 100%, 50%);
+    --green: hsl(120, 100%, 21%);
+    --black: hsl(0, 0%, 0%);
+    --dark-blue: hsl(239, 97%, 15%);
+    --white-blue: hsl(229, 100%, 72%);
+    --light-gray: rgb(182, 182, 182);
+}
+
+h1{
+    color: var(--dark-blue);
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--black);
+  }
+a:visited {
+    color: var(--black);
+}
+a:hover {
+    color: var(--white-blue);
+  }
+  
+  /* selected link */
+a:active {
+    color: var(--dark-blue);
+  }
+
+
+
+
+#curriculo {
+    text-align: center;
+}
+
+#cur {
+    width: 30% !important;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  tr:hover {background-color: var(--light-gray);}
