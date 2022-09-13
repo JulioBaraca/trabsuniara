@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Julio</title>
+        <link rel="stylesheet" href="../styles/style-julio.css">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div id="1"></div>
+        <script>
+            load("header.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(1).innerHTML = req.responseText;
+            }
+        </script>
+
+        <!-- CURRICULO -->
+        <div id="curriculo">
+            <h1>CURRICULO</h1>
+            <!-- DADOS PESSOAIS -->
+            <table id="cur" class="dados" align="center">
+                <tr>
+                    <th colspan="2"><b>Dados Pessoais</b></th>
+                </tr>
+                <tr>
+                    <td><b>Nome:</b></td>
+                    <td>Julio Cesar Baraca Junior</td>
+                </tr>
+                <tr>
+                    <td><b>Data de Nascimento:</b></td>
+                    <td>23/07/2004</td>
+                </tr>
+                <tr>
+                    <td><b>Idade:</b></td>
+                    <td>18 anos</td>
+                </tr>
+                <tr>
+                    <td><b>Celular:</b></td>
+                    <td>(16) 99795-9894</td>
+                </tr>
+            </table>
+
+            
+
+            <!-- REDES SOCIAIS -->
+            <br>
+
+            <table id="cur" class="redes-sociais">
+                <tr>
+                    <th colspan="2"><b>Redes Sociais</b></th>
+                </tr>
+                <tr>
+                    <td><b>Linkedin:</b></td>
+                    <td><a href="https://www.linkedin.com/in/julio-cesar-baraca-junior-3247a51bb/" target="_blank">Julio Cesar Baraca Junior</a></td>
+                </tr>
+                <tr>
+                    <td><b>GitHub:</b></td>
+                    <td><a href="https://github.com/JulioBaraca" target="_blank">Julio Baraca</a></td>
+                </tr>
+                <tr>
+                    <td><b>WhatsApp</b></td>
+                    <td><a href="https://api.whatsapp.com/send?phone=5516997959894&text=Ol%C3%A1%2C%20Julio!">(16) 99795-9894</a></td>
+                </tr>
+                <tr>
+                    <td><b>Instagram:</b></td>
+                    <td><a href="https://www.instagram.com/baraca_julio/" target="_blank">@baraca_julio</a></td>
+                </tr>
+                <tr>
+                    <td><b>Facebook:</b></td>
+                    <td><a href="https://www.facebook.com/baraca.julio/" target="_blank">Julio Baraca</a></td>
+                </tr>
+            </table>
+
+            <!-- LOCALIZAÇÃO -->
+            <br>
+
+            <table id="cur" class="loc" align="center">
+                <tr>
+                    <th colspan="2"><b>Local</b></th>
+                </tr>
+                <tr>
+                    <td><b>Rua:</b></td>
+                    <td>Rua Miosótis</td>
+                </tr>
+                <tr>
+                    <td><b>Cidade:</b></td>
+                    <td>Ribeirão Bonito - SP</td>
+                </tr>
+                <tr>
+                    <td><b>CEP:</b></td>
+                    <td>13580-000</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

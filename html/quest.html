@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionário</title>
+        <link rel="stylesheet" href="../styles/style-quest.css">
+    </head>
+    <body>
+        <div id="1"></div>
+        <script>
+            load("header.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(1).innerHTML = req.responseText;
+            }
+        </script>
+        <br>
+        <div class="quest">
+            <form>
+                <table>
+                    <tr>
+                        <td>Nome: </td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Senha: </td>
+                        <td><input type="password" name="senha" id="senha"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo: </td>
+                        <td>
+                            <input type="radio" name="sexo" id="masculino">
+                            <label for="sexo">Masculino</label>
+                            <input type="radio" name="sexo" id="feminino">
+                            <label for="sexo">Feminino</label>
+                            <input type="radio" name="sexo" id="indeciso">
+                            <label for="sexo">Indeciso</label>
+                            <input type="radio" name="sexo" id="as-vezes">
+                            <label for="sexo">Às Vezes</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Foto: </td>
+                        <td><input type="file" name="foto" id="foto"></td>
+                    </tr>
+                    <tr>
+                        <td>Canal de comunicação: </td>
+                        <td>
+                            <input type="checkbox" name="comunicacao" id="tv">
+                            <label for="comunicacao">TV</label>
+                            <input type="checkbox" name="comunicacao" id="pc">
+                            <label for="comunicacao">PC</label>
+                            <input type="checkbox" name="comunicacao" id="tablet">
+                            <label for="comunicacao">Tablet</label>
+                            <input type="checkbox" name="comunicacao" id="jornal">
+                            <label for="comunicacao">Jornal</label>
+                            <input type="checkbox" name="comunicacao" id="outros">
+                            <label for="comunicacao">Outros</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Período: </td>
+                        <td>
+                            <select name="periodo" id="periodo">
+                                <option value="manha">Manhã (08:00 às 12:00)</option>
+                                <option value="tarde">Tarde (13:00 às 17:00)</option>
+                                <option value="noite">Noite (18:00 às 22:00)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Resumo: </td>
+                        <td><textarea name="resumo" id="resumo" cols="70" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Limpar campos: </td>
+                        <td><input type="reset" onclick="alert('Formulário limpo!')" id="limpar" value="Limpar"></td>
+                    </tr>
+                    <tr><td><br><br></td></tr>
+                    <tr>
+                        <td>
+                            <input type="submit" onclick="alert('Enviado!')" id="enviar" value="Enviar">
+                            <input type="reset" onclick="alert('Cancelado!')" id="cancelar" value="Cancelar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
